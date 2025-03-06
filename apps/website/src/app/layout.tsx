@@ -1,9 +1,11 @@
 import { config } from '@platform/config';
 import './global.css';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: config.title,
   description: config.description,
+  authors: [{ name: config.author?.name, url: config.author?.website }],
 };
 
 export default function RootLayout({
@@ -12,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang={config.lang} dir={config.dir}>
       <body>{children}</body>
     </html>
   );

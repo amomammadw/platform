@@ -4,5 +4,10 @@ export const config: IConfig = {
   name: 'platform',
   title: 'Platform',
   description: 'another cool app',
-  author: 'Mohammad Ranjbar',
+  author: {
+    name: 'Mohammad Ranjbar',
+    website: 'https://mohammad-ranjbar.vercel.app',
+  },
+  lang: 'fa',
+  dir: 'rtl',
 };
