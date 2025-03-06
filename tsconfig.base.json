@@ -18,8 +18,7 @@
       "@platform/config": ["packages/config/src/index.ts"],
       "@platform/font": ["packages/font/src/index.ts"],
       "@platform/font/fa": ["packages/font/src/lib/fa.css"],
-      "@platform/tailwind": ["packages/tailwind/tailwind.js"],
-      "@platform/ui": ["packages/ui/src/index.ts"]
+      "@platform/tailwind": ["packages/tailwind/tailwind.js"]
     }
   },
   "exclude": ["node_modules", "tmp"]
