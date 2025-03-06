@@ -8,4 +8,5 @@ export interface IConfig {
   description: string;
   lang: 'en' | 'fa';
   dir: 'rtl' | 'ltr';
+  themeColor?: string;
 }
