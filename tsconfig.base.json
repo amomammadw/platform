@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@platform/config": ["packages/config/src/index.ts"]
+      "@platform/config": ["packages/config/src/index.ts"],
+      "@platform/font": ["packages/font/src/index.ts"],
+      "@platform/font/fa": ["packages/font/src/lib/fa.css"]
     }
   },
   "exclude": ["node_modules", "tmp"]

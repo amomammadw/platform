@@ -1,0 +1,1 @@
+import './lib/fa.css';
