@@ -1,3 +1,9 @@
+import { Button } from '@platform/ui';
+
 export default function Index() {
-  return <div className="container">فونت فارسی</div>;
+  return (
+    <div className="container">
+      <Button>Dokme</Button>
+    </div>
+  );
 }
