@@ -1,3 +1,3 @@
 export default function Index() {
-  return <div>فونت فارسی</div>;
+  return <div className="container">فونت فارسی</div>;
 }

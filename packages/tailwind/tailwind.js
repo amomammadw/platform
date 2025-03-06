@@ -10,5 +10,10 @@ module.exports = {
     ),
     ...createGlobPatternsForDependencies(__dirname),
   ],
-  presets: [require('../../packages/tailwind/tailwind')],
+  theme: {
+    container: {
+      center: true,
+      padding: '16px',
+    },
+  },
 };

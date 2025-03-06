@@ -17,7 +17,8 @@
     "paths": {
       "@platform/config": ["packages/config/src/index.ts"],
       "@platform/font": ["packages/font/src/index.ts"],
-      "@platform/font/fa": ["packages/font/src/lib/fa.css"]
+      "@platform/font/fa": ["packages/font/src/lib/fa.css"],
+      "@platform/tailwind": ["packages/tailwind/tailwind.js"]
     }
   },
   "exclude": ["node_modules", "tmp"]
