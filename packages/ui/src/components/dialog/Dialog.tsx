@@ -21,7 +21,7 @@ export const Dialog = () => {
           <div className="flex min-h-full items-center justify-center p-4">
             <HeadlessDialogPanel
               transition
-              className="w-full max-w-md rounded-xl bg-white p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0"
+              className="w-full max-w-md rounded-xl bg-white p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:scale-95 data-[closed]:opacity-0"
             >
               <HeadlessDialogTitle
                 as="h3"
