@@ -1,4 +1,5 @@
 @import '@platform/font/fa';
+@import '@platform/tailwind/colors';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

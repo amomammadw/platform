@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={config.lang} dir={config.dir}>
-      <body className="bg-slate-200">
+      <body>
         <MainHeader />
         <main className="py-5 container">{children}</main>
         <Dialog />
