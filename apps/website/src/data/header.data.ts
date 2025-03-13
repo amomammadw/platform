@@ -5,7 +5,7 @@ interface HeaderItem {
 
 export const headerItems: HeaderItem[] = [
   {
-    link: '/home',
+    link: '/',
     text: 'خانه',
   },
   {
