@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang={config.lang} dir={config.dir}>
       <body className="bg-slate-200">
         <MainHeader />
-        <main className="py-5">{children}</main>
+        <main className="py-5 container">{children}</main>
         <Dialog />
       </body>
     </html>
