@@ -2,6 +2,7 @@ import { config } from '@platform/config';
 import { Dialog } from '@platform/ui';
 import './global.css';
 import { Metadata } from 'next';
+import { MainHeader } from '../components/layout/header/MainHeader';
 
 export const metadata: Metadata = {
   title: config.title,
@@ -16,8 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang={config.lang} dir={config.dir}>
-      <body>
-        {children} <Dialog />
+      <body className="bg-slate-200">
+        <MainHeader />
+        <main className="py-5">{children}</main>
+        <Dialog />
       </body>
     </html>
   );
