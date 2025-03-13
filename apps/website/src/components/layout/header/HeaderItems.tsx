@@ -8,7 +8,7 @@ export const HeaderItems = () => {
         <li key={headerItem.text}>
           <Link
             href={headerItem.link}
-            className="font-light transition-all hover:text-secondary-200"
+            className="font-light transition-all hover:text-secondary-700"
           >
             {headerItem.text}
           </Link>
