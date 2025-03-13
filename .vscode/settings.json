@@ -1,4 +1,5 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["Ranjbar", "Vazirmatn"]
+  "cSpell.words": ["Ranjbar", "Vazirmatn"],
+  "vitest.disableWorkspaceWarning": true
 }
