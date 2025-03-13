@@ -1,15 +1,17 @@
 import { create } from 'zustand';
 
+interface IDialogPayload {
+  title: string;
+  description: string;
+  content: React.ReactNode;
+}
+
 interface DialogState {
   isOpen: boolean;
   title: string;
   description: string;
   content: React.ReactNode;
-  openDialog: (
-    title: string,
-    description: string,
-    content: React.ReactNode
-  ) => void;
+  openDialog: (payload: IDialogPayload) => void;
   closeDialog: () => void;
 }
 
@@ -18,8 +20,8 @@ export const useDialogStore = create<DialogState>((set) => ({
   title: '',
   description: '',
   content: null,
-  openDialog: (title, description, content) =>
-    set({ isOpen: true, title, description, content }),
-  closeDialog: () =>
-    set({ isOpen: false, title: '', description: '', content: null }),
+  openDialog: (payload) => set({ isOpen: true, ...payload }),
+  closeDialog: () => {
+    set({ isOpen: false, title: '', description: '', content: null });
+  },
 }));
