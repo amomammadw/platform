@@ -1,8 +1,15 @@
-import { Button } from '@platform/ui';
+'use client';
+import { Button, useDialogStore } from '@platform/ui';
+import { Login } from '@platform/auth';
 
 export const HeaderAuthButton = () => {
+  const { openDialog } = useDialogStore();
+
   return (
-    <Button className="text-white font-light transition-all hover:text-slate-200">
+    <Button
+      onClick={() => openDialog({ title: 'ورود', content: <Login /> })}
+      className="text-white font-light transition-all hover:text-slate-200"
+    >
       ورود
     </Button>
   );
