@@ -1,4 +1,5 @@
 import { config } from '@platform/config';
+import { Dialog } from '@platform/ui';
 import './global.css';
 import { Metadata } from 'next';
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang={config.lang} dir={config.dir}>
-      <body>{children}</body>
+      <body>
+        {children} <Dialog />
+      </body>
     </html>
   );
 }
