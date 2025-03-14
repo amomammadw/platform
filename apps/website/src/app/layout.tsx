@@ -3,7 +3,7 @@ import { config } from '@platform/config';
 import favicon from '@platform/config/favicon';
 import { Dialog } from '@platform/ui';
 import './global.css';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import { MainHeader } from '../components/layout/header/MainHeader';
 import { ReactScan } from '#/components/layout/ReactScan';
 
@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   ],
 };
 
+export const viewport: Viewport = {
+  themeColor: config.themeColor,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -28,6 +32,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang={config.lang} dir={config.dir}>
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </head>
       <body>
         <MainHeader />
         <main>{children}</main>

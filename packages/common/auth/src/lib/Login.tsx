@@ -4,7 +4,12 @@ export const Login = () => {
   return (
     <div>
       <form className="space-y-3">
-        <TextField autoFocus required placeholder="شماره موبایل" />
+        <TextField
+          autoFocus
+          required
+          inputMode="numeric"
+          placeholder="شماره موبایل"
+        />
 
         <Button type="submit" block>
           ورود

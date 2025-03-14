@@ -8,6 +8,7 @@ export const config: IConfig = {
     name: 'Mohammad Ranjbar',
     website: 'https://mohammad-ranjbar.vercel.app',
   },
+  themeColor: '#8ecae6',
   lang: 'fa',
   dir: 'rtl',
 };
