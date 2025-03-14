@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "types": ["unplugin-icons/types/react"],
     "paths": {
       "#/*": ["apps/website/src/*"],
       "@platform/auth": ["packages/common/auth/src/index.ts"],

@@ -7,6 +7,16 @@ const { composePlugins, withNx } = require('@nx/next');
  * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
  **/
 const nextConfig = {
+  webpack(config) {
+    config.plugins.push(
+      require('unplugin-icons/webpack').default({
+        compiler: 'jsx',
+        jsx: 'react',
+      })
+    );
+
+    return config;
+  },
   nx: {
     // Set this to true if you would like to use SVGR
     // See: https://github.com/gregberge/svgr
