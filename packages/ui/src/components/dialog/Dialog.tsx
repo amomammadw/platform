@@ -25,7 +25,7 @@ export const Dialog = () => {
             >
               <HeadlessDialogTitle
                 as="h3"
-                className="text-base/7 font-medium text-black"
+                className="text-base/7 mb-5 font-medium text-black"
               >
                 {title}
               </HeadlessDialogTitle>
