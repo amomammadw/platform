@@ -25,9 +25,9 @@ export const HeaderMobile = () => {
     <>
       <div className="flex w-full justify-between items-center">
         {isOpen ? (
-          <IconX onClick={toggleMenu} />
+          <IconX className="size-6" onClick={toggleMenu} />
         ) : (
-          <IconMenu onClick={toggleMenu} />
+          <IconMenu className="size-6" onClick={toggleMenu} />
         )}
 
         <HeaderAuthButton />
@@ -35,7 +35,7 @@ export const HeaderMobile = () => {
 
       <div
         className={cn(
-          'transform transition-all py-3 container duration-300 fixed top-14 right-0 w-full h-dvh bg-secondary-50',
+          'transform space-y-3 transition-all py-3 container duration-300 fixed top-14 right-0 w-full h-dvh bg-secondary-50',
           !isOpen ? 'translate-x-full' : '-translate-x-0'
         )}
       >

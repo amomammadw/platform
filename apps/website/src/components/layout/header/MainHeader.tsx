@@ -7,7 +7,7 @@ export const MainHeader = async () => {
   const { type } = await useGetServerDevice();
 
   return (
-    <header className="sticky bg-white top-0 py-5 shadow-md">
+    <header className="sticky bg-white top-0 py-3 shadow-md">
       <nav className="container">
         <ul className="flex items-center w-full gap-10">
           {type !== 'mobile' ? (
