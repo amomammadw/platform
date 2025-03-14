@@ -13,7 +13,7 @@ export const HeaderItems = ({ onLinkClick }: IProps) => {
           <Link
             href={headerItem.link}
             onClick={onLinkClick}
-            className="font-light transition-all hover:text-secondary-700"
+            className="font-light text-secondary-1100 transition-all hover:text-secondary-900"
           >
             {headerItem.text}
           </Link>
