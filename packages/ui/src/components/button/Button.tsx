@@ -3,13 +3,14 @@ import { cn } from '../../utils/cn';
 import { VariantProps, cva } from 'class-variance-authority';
 
 const buttonClasses = cva(
-  'outline-none disabled:opacity-70 px-4 py-1 transition-all rounded-lg disabled:pointer-events-none',
+  'outline-none disabled:opacity-70 px-4 transition-all rounded-lg disabled:pointer-events-none',
   {
     variants: {
       size: {
-        medium: '',
-        large: '',
-        xLarge: '',
+        small: 'h-8',
+        medium: 'h-10',
+        large: 'h-12',
+        xLarge: 'h-14',
       },
       block: {
         true: 'w-full',
@@ -22,7 +23,7 @@ const buttonClasses = cva(
         ghost: 'text-primary-500 hover:text-primary-600',
       },
     },
-    defaultVariants: { variant: 'fill' },
+    defaultVariants: { variant: 'fill', size: 'medium' },
   }
 );
 

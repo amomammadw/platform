@@ -8,6 +8,7 @@ export const HeaderAuthButton = () => {
   return (
     <Button
       variant={'outline'}
+      size={'small'}
       onClick={() => openDialog({ title: 'ورود', content: <Login /> })}
     >
       ورود
