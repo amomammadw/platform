@@ -1,9 +1,10 @@
 'use client';
 import { cn } from '@platform/ui';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import IconMenu from '~icons/tabler/menu-2';
 import IconX from '~icons/tabler/x';
 import { HeaderItems } from './HeaderItems';
+import { HeaderAuthButton } from './HeaderAuthButton';
 
 export const HeaderMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +13,29 @@ export const HeaderMobile = () => {
     setIsOpen((prev) => !prev);
   }
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.removeProperty('overflow');
+    }
+  }, [isOpen]);
+
   return (
     <>
-      {isOpen ? (
-        <IconX onClick={toggleMenu} />
-      ) : (
-        <IconMenu onClick={toggleMenu} />
-      )}
+      <div className="flex w-full justify-between items-center">
+        {isOpen ? (
+          <IconX onClick={toggleMenu} />
+        ) : (
+          <IconMenu onClick={toggleMenu} />
+        )}
+
+        <HeaderAuthButton />
+      </div>
 
       <div
         className={cn(
-          'transform transition-all py-3 container duration-500 fixed top-14 right-0 w-full h-dvh bg-secondary-100',
+          'transform transition-all py-3 container duration-300 fixed top-14 right-0 w-full h-dvh bg-secondary-50',
           !isOpen ? 'translate-x-full' : '-translate-x-0'
         )}
       >

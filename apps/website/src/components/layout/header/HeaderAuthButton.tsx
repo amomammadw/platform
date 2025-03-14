@@ -8,7 +8,7 @@ export const HeaderAuthButton = () => {
   return (
     <Button
       onClick={() => openDialog({ title: 'ورود', content: <Login /> })}
-      className="font-light transition-all hover:text-secondary-200"
+      className="font-light transition-all hover:text-secondary-700"
     >
       ورود
     </Button>
