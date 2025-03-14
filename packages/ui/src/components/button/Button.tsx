@@ -22,7 +22,7 @@ const buttonClasses = cva(
         ghost: 'text-primary-500 hover:text-primary-600',
       },
     },
-    defaultVariants: { variant: 'fill', block: true },
+    defaultVariants: { variant: 'fill' },
   }
 );
 
@@ -30,8 +30,17 @@ interface IButtonProps
   extends ComponentPropsWithRef<'button'>,
     VariantProps<typeof buttonClasses> {}
 
-export const Button = ({ className, variant, ...props }: IButtonProps) => {
+export const Button = ({
+  className,
+  variant,
+  block,
+  size,
+  ...props
+}: IButtonProps) => {
   return (
-    <button className={cn(buttonClasses({ variant }), className)} {...props} />
+    <button
+      className={cn(buttonClasses({ variant, size, block }), className)}
+      {...props}
+    />
   );
 };

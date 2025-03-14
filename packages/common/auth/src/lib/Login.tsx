@@ -6,7 +6,9 @@ export const Login = () => {
       <form className="space-y-6">
         <TextField autoFocus required placeholder="شماره موبایل" />
 
-        <Button type="submit">ورود</Button>
+        <Button type="submit" block>
+          ورود
+        </Button>
       </form>
     </div>
   );

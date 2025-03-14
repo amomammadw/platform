@@ -9,7 +9,7 @@ export const MainHeader = async () => {
   return (
     <header className="sticky bg-white top-0 py-5 shadow-md">
       <nav className="container">
-        <ul className="flex w-full gap-10">
+        <ul className="flex items-center w-full gap-10">
           {type !== 'mobile' ? (
             <>
               <HeaderItems />

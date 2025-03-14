@@ -1,15 +1,15 @@
 :root {
-  --color-primary-50: 255, 244, 235;
-  --color-primary-100: 255, 222, 192;
-  --color-primary-200: 255, 206, 161;
-  --color-primary-300: 255, 184, 118;
-  --color-primary-400: 255, 170, 92;
-  --color-primary-500: 255, 149, 51;
-  --color-primary-600: 232, 136, 46;
-  --color-primary-700: 181, 106, 36;
-  --color-primary-800: 140, 82, 28;
-  --color-primary-900: 107, 63, 21;
-  --color-primary-1000: 72, 43, 14;
+  --color-primary-50: 235, 248, 255;
+  --color-primary-100: 192, 230, 255;
+  --color-primary-200: 161, 216, 255;
+  --color-primary-300: 118, 198, 255;
+  --color-primary-400: 92, 186, 255;
+  --color-primary-500: 51, 170, 255;
+  --color-primary-600: 46, 153, 232;
+  --color-primary-700: 36, 122, 181;
+  --color-primary-800: 28, 94, 140;
+  --color-primary-900: 21, 71, 107;
+  --color-primary-1000: 14, 48, 72;
   --color-secondary-20: 249, 250, 251;
   --color-secondary-50: 243, 245, 247;
   --color-secondary-100: 217, 223, 231;
