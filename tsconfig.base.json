@@ -19,6 +19,7 @@
       "#/*": ["apps/website/src/*"],
       "@platform/auth": ["packages/common/auth/src/index.ts"],
       "@platform/config": ["packages/config/src/index.ts"],
+      "@platform/config/favicon": ["packages/config/src/assets/favicon.ico"],
       "@platform/font": ["packages/font/src/index.ts"],
       "@platform/font/fa": ["packages/font/src/lib/fa.css"],
       "@platform/tailwind": ["packages/tailwind/tailwind.js"],
