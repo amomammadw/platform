@@ -5,6 +5,7 @@ import { Dialog } from '@platform/ui';
 import './global.css';
 import { Metadata } from 'next';
 import { MainHeader } from '../components/layout/header/MainHeader';
+import { ReactScan } from '#/components/layout/ReactScan';
 
 export const metadata: Metadata = {
   title: config.title,
@@ -31,6 +32,7 @@ export default function RootLayout({
         <MainHeader />
         <main>{children}</main>
         <Dialog />
+        <ReactScan />
       </body>
     </html>
   );
