@@ -6,7 +6,7 @@ import { memo } from 'react';
 const MemoizedLogin = memo(Login);
 
 export const HeaderAuthButton = () => {
-  const { openDialog } = useDialogStore();
+  const openDialog = useDialogStore((state) => state.openDialog);
 
   return (
     <Button

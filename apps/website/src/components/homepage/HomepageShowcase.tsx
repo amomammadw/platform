@@ -1,15 +1,15 @@
 import { homepageShowCaseData } from '#/data/homepage.data';
 import { MainSection } from '../layout/section/MainSection';
+import { HomepageShowcaseList } from './HomepageShowcaseList';
 
 export const HomepageShowcase = () => {
   return (
-    <MainSection>
-      <h2>{homepageShowCaseData.title}</h2>
-      <ul>
-        {homepageShowCaseData.items.map((item) => (
-          <li key={item.title}>{item.title}</li>
-        ))}
-      </ul>
+    <MainSection className="container">
+      <h2 className="lg:text-3xl font-medium mb-7">
+        {homepageShowCaseData.title}
+      </h2>
+
+      <HomepageShowcaseList />
     </MainSection>
   );
 };
