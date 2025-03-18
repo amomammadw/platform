@@ -25,9 +25,12 @@ export const HeaderMobile = () => {
     <>
       <div className="flex w-full justify-between items-center">
         {isOpen ? (
-          <IconX className="size-6" onClick={toggleMenu} />
+          <IconX className="size-6 text-secondary-900" onClick={toggleMenu} />
         ) : (
-          <IconMenu className="size-6" onClick={toggleMenu} />
+          <IconMenu
+            className="size-6 text-secondary-900"
+            onClick={toggleMenu}
+          />
         )}
 
         <HeaderAuthButton />

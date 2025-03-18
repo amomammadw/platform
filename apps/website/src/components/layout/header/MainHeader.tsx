@@ -1,10 +1,10 @@
 import { HeaderAuthButton } from './HeaderAuthButton';
-import { useGetServerDevice } from '@platform/utils';
+import { useServerDevice } from '@platform/utils';
 import { HeaderItems } from './HeaderItems';
 import { HeaderMobile } from './HeaderMobile';
 
 export const MainHeader = async () => {
-  const { type } = await useGetServerDevice();
+  const { type } = await useServerDevice();
 
   return (
     <header className="sticky bg-secondary-1000 top-0 py-3">

@@ -1,4 +1,4 @@
-import { homepageData } from '#/data/homepage.data';
+import { homepageHeroData } from '#/data/homepage.data';
 import { Button } from '@platform/ui';
 
 export const HomepageCta = () => {
@@ -13,7 +13,7 @@ export const HomepageCta = () => {
         </div>
       ))}
       <Button block className="col-span-full">
-        {homepageData.buttonText}
+        {homepageHeroData.buttonText}
       </Button>
     </div>
   );
