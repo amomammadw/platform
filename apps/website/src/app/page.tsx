@@ -14,7 +14,7 @@ export default function Index() {
     <div>
       <HomepageHero />
       <HomepageShowcase />
-      <Tab className="w-full" items={items} />
+      <Tab className="mx-auto" items={items} />
     </div>
   );
 }

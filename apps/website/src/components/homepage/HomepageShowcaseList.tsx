@@ -19,7 +19,7 @@ export const HomepageShowcaseList = () => {
           <li
             key={item.title}
             onClick={() => onClickItem(index)}
-            className="h-20 w-full cursor-pointer bg-secondary-50 transition-all hover:bg-secondary-100 flex items-center justify-center rounded-lg"
+            className="h-20 xl:last:col-span-1 md:last:col-span-full last:col-span-1 w-full cursor-pointer bg-secondary-50 transition-all hover:bg-secondary-100 flex items-center justify-center rounded-lg"
           >
             {item.title}
           </li>
