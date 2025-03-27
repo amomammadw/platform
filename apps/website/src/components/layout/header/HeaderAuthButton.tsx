@@ -1,9 +1,9 @@
 'use client';
 import { Button, useDialogStore } from '@platform/ui';
-import { Login } from '@platform/auth';
+import { Register } from '@platform/auth';
 import { memo } from 'react';
 
-const MemoizedLogin = memo(Login);
+const MemoizedLogin = memo(Register);
 
 export const HeaderAuthButton = () => {
   const openDialog = useDialogStore((state) => state.openDialog);
@@ -12,7 +12,9 @@ export const HeaderAuthButton = () => {
     <Button
       variant={'outline'}
       size={'small'}
-      onClick={() => openDialog({ title: 'ورود', content: <MemoizedLogin /> })}
+      onClick={() =>
+        openDialog({ title: 'ثبت نام', content: <MemoizedLogin /> })
+      }
     >
       ورود
     </Button>
