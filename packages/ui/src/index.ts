@@ -6,5 +6,6 @@ export * from './components/dialog/Dialog';
 export * from './components/switch/Switch';
 export * from './components/dialog/useDialog';
 export * from './components/carousel/Carousel';
+export * from './components/select/Select';
 export * from './components/text-field/TextField';
 export * from './components/bottom-sheet/BottomSheet';
