@@ -6,6 +6,7 @@ import './global.css';
 import { Metadata, Viewport } from 'next';
 import { MainHeader } from '../components/layout/header/MainHeader';
 import { ReactScan } from '#/components/layout/ReactScan';
+import ReactQueryProvider from '#/providers/ReactQueryProvider';
 
 export const metadata: Metadata = {
   title: config.title,
@@ -39,9 +40,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <MainHeader />
-        <main>{children}</main>
-        <Dialog />
+        <ReactQueryProvider>
+          <MainHeader />
+          <main>{children}</main>
+          <Dialog />
+        </ReactQueryProvider>
         <ReactScan />
       </body>
     </html>
