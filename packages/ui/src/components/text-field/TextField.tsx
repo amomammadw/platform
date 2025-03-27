@@ -3,7 +3,7 @@ import { ComponentPropsWithRef } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 
 const inputClasses = cva(
-  'block peer w-full [&:user-invalid]:border-error [&:user-invalid]:text-error [&:user-invalid]:focus:border-error border outline-none border-secondary-300 focus:border-secondary-700 rounded-lg py-1.5 px-3 text-sm/6 text-secondary-900 transition-all',
+  'block peer w-full [&:user-invalid]:border-error [&:user-invalid]:text-error [&:user-invalid]:focus:border-error border outline-none border-secondary-300 focus:border-secondary-500 rounded-lg py-1.5 px-3 text-sm/6 text-secondary-900 transition-all',
   {
     variants: {
       size: {
