@@ -1,6 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide, type SwiperProps } from 'swiper/react';
 
+import './carousel.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -10,12 +11,15 @@ import type { ReactNode } from 'react';
 
 export type TCarouselProps = SwiperProps & { slides: ReactNode[] };
 
-export const Carousel = ({ slides, ...props }: TCarouselProps) => {
+export const Carousel = ({
+  slides,
+  slidesPerView,
+  spaceBetween,
+  ...props
+}: TCarouselProps) => {
   return (
     <Swiper
       {...props}
-      slidesPerView={3}
-      spaceBetween={50}
       navigation={{ enabled: true }}
       pagination={{ clickable: true }}
       modules={[Pagination, Navigation]}

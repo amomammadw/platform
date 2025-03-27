@@ -4,11 +4,7 @@ import { HomepageShowcaseList } from './HomepageShowcaseList';
 
 export const HomepageShowcase = () => {
   return (
-    <MainSection className="container">
-      <h2 className="lg:text-3xl font-medium mb-7">
-        {homepageShowCaseData.title}
-      </h2>
-
+    <MainSection className="container" title={homepageShowCaseData.title}>
       <HomepageShowcaseList />
     </MainSection>
   );

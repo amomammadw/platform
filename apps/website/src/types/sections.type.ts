@@ -4,7 +4,7 @@ export interface ISectionItem {
   description: string;
 }
 
-export interface ISectionContent {
+export interface ISectionContent<T = ISectionItem> {
   title: string;
-  items: ISectionItem[];
+  items: T[];
 }

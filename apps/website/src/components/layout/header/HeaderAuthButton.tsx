@@ -16,7 +16,7 @@ export const HeaderAuthButton = () => {
         openDialog({ title: 'ثبت نام', content: <MemoizedLogin /> })
       }
     >
-      ورود
+      ورود / ثبت نام
     </Button>
   );
 };
