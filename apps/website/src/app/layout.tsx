@@ -7,6 +7,8 @@ import { Metadata, Viewport } from 'next';
 import { MainHeader } from '../components/layout/header/MainHeader';
 import { ReactScan } from '#/components/layout/ReactScan';
 import ReactQueryProvider from '#/providers/ReactQueryProvider';
+import { MainFooter } from '#/components/layout/footer/MainFooter';
+import { UpperFooter } from '#/components/layout/footer/UpperFooter';
 
 export const metadata: Metadata = {
   title: config.title,
@@ -43,6 +45,8 @@ export default function RootLayout({
         <ReactQueryProvider>
           <MainHeader />
           <main>{children}</main>
+          <UpperFooter />
+          <MainFooter />
           <Dialog />
         </ReactQueryProvider>
         <ReactScan />
