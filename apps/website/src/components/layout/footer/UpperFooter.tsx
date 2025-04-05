@@ -10,6 +10,7 @@ export const UpperFooter = () => {
         whileInView={{ translateX: 0 }}
         transition={{ duration: 0.5 }}
         initial={{ translateX: -412 }}
+        viewport={{ once: true }}
       >
         <Image
           alt="car"
