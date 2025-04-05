@@ -3,7 +3,7 @@ import { Button, useDialogStore } from '@platform/ui';
 import { Register } from '@platform/auth';
 import { memo } from 'react';
 
-const MemoizedLogin = memo(Register);
+const MemoizedRegister = memo(Register);
 
 export const HeaderAuthButton = () => {
   const openDialog = useDialogStore((state) => state.openDialog);
@@ -13,7 +13,7 @@ export const HeaderAuthButton = () => {
       variant={'outline'}
       size={'small'}
       onClick={() =>
-        openDialog({ title: 'ثبت نام', content: <MemoizedLogin /> })
+        openDialog({ title: 'ثبت نام', content: <MemoizedRegister /> })
       }
     >
       ورود / ثبت نام
