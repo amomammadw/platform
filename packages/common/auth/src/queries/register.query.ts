@@ -7,16 +7,19 @@ interface IRegisterPayload {
   password: string;
 }
 
+interface IRegisterResponse {
+  token: string;
+}
+
 export const useRegisterMutation = (
-  options?: UseMutationOptions<void, void, IRegisterPayload>
+  options?: UseMutationOptions<IRegisterResponse, void, IRegisterPayload>
 ) =>
   useMutation({
     mutationKey: ['register'],
-    mutationFn: async (data) => {
+    mutationFn: async (data) =>
       await api('/api/register', {
         method: 'POST',
         body: JSON.stringify(data),
-      });
-    },
+      }),
     ...options,
   });
