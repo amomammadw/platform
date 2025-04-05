@@ -1,9 +1,14 @@
 import { FormEvent } from 'react';
 import { Button, TextField } from '@platform/ui';
 import { useRegisterMutation } from '../queries/register.query';
+import { useCookie } from '@platform/utils';
 
 export const Register = () => {
-  const { mutate, isPending } = useRegisterMutation();
+  const { mutate, isPending } = useRegisterMutation({
+    onSuccess(data) {
+      useCookie.set('access_token', data.token);
+    },
+  });
 
   const handleFormSubmit = (event: FormEvent) => {
     event.preventDefault();
