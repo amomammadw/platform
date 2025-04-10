@@ -7,6 +7,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@tanstack/react-query": "^5.69.0",
+    "@tanstack/react-router": "^1.115.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "js-cookie": "^3.0.5",
@@ -39,6 +40,8 @@
     "@swc/cli": "~0.3.12",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@tanstack/react-router-devtools": "^1.115.2",
+    "@tanstack/router-plugin": "^1.115.2",
     "@testing-library/react": "16.1.0",
     "@types/jest": "^29.5.12",
     "@types/js-cookie": "^3.0.6",
