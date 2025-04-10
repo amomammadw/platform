@@ -1,12 +1,12 @@
 import { FormEvent } from 'react';
 import { Button, TextField } from '@platform/ui';
 import { useRegisterMutation } from '../queries/register.query';
-import { useCookie } from '@platform/utils';
+import Cookies from 'js-cookie';
 
 export const Register = () => {
   const { mutate, isPending } = useRegisterMutation({
     onSuccess(data) {
-      useCookie.set('access_token', data.token);
+      Cookies.set('access_token', data.token);
     },
   });
 
